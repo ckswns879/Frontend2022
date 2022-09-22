@@ -5,7 +5,7 @@
 }
 /*레이아웃*/
 nav{
-    background-color: brown;
+    background-color: rgb(255, 0, 0);
     display: flex;                    /*옆으로배열*/
     justify-content:space-between;
     color: white;
@@ -16,25 +16,47 @@ nav>ul{
     list-style: none;
 }
 header{
-    background-color: chocolate;
+    background-color: rgb(216, 27, 27);
+}
+header>section{
     display: flex;
-    justify-content: center;
-    
+}
+.header_left, .header_right{
+    margin: 30px;
+}
+.header_left{
+    width: 30%;
+}
+.header_right{
+    width: 70%;
 }
 main{
-    background-color: crimson;
+    background-color: rgb(220, 217, 20);
     display: flex;
     justify-content: center;
     margin: 0px;
+    flex-wrap: wrap;
 }
+main>section{
+    width: 400px;
+    text-align: center;
+}
+main img{
+    border-radius: 50%;
+}
+
 footer{
-    background-color: darkgoldenrod;
+    background-color: rgb(106, 187, 0);
     display: flex;
     justify-content: center;
     color: white;
     font-size: 15px;
 }
-footer>li{
+footer > h2, footer > ul{
+    margin: 10px;
+}
+footer li{
     list-style: none;
     font-size: 5px;
+    padding: 10px;
 }
